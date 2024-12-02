@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/CharacterInterface.unity
-    guid: 755e4760e89f06747a1ea0f9f9098df2
+    path: Assets/Scenes/Fishing.unity
+    guid: 87404bfca21740342baf13f9fb936145
   m_configObjects: {}
