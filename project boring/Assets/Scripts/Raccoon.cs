@@ -13,8 +13,6 @@ public class Raccoon : MonoBehaviour
     public double currency1_num;
     public double currency2_num;
     private int LV = 1;
-    public Text currency1_text;
-    public Text currency2_text;
     private float timer = 0;
     //public int Raccoon_LV;
     // Start is called before the first frame update
@@ -33,10 +31,8 @@ public class Raccoon : MonoBehaviour
         timer += Time.deltaTime ;
         if(timer >= 1)
         {
-            currency1_num = currency1_num + Math.Round(Raccoom_OPT1(Raccoon_LV(LV))+(Raccoom_OPT1(Raccoon_LV(LV))*Raccoom_Item1(Item1_LV(0))),0);
-            currency1_text.text = currency1_num.ToString();
+            currency1_num = currency1_num + Math.Round(Raccoom_OPT1(Raccoon_LV(LV))+(Raccoom_OPT1(Raccoon_LV(LV))*Raccoom_Item1(Item1_LV(0))),0);            
             currency2_num = currency2_num + Math.Round(Raccoom_OPT2(Raccoon_LV(LV))+(Raccoom_OPT2(Raccoon_LV(LV))*Raccoom_Item2(Item2_LV(0))),0);
-            currency2_text.text = currency2_num.ToString();
             timer = 0;
         }      
     }

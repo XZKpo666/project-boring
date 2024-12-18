@@ -355,6 +355,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39042565}
   m_CullTransparentMesh: 1
+--- !u!1 &71394542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71394543}
+  - component: {fileID: 71394545}
+  - component: {fileID: 71394544}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71394543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71394542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &71394544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71394542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e070b20611fc44fb36d9f9497fb07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LVUP: {fileID: 0}
+  currency1_num: 0
+  currency2_num: 0
+--- !u!114 &71394545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71394542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c26866ee5060d488161c6377f092e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency1_text: {fileID: 530413602}
+  currency2_text: {fileID: 264822395}
 --- !u!1 &83025887
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,8 +896,6 @@ MonoBehaviour:
   LVUP: {fileID: 0}
   currency1_num: 0
   currency2_num: 0
-  currency1_text: {fileID: 0}
-  currency2_text: {fileID: 0}
 --- !u!114 &241479433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,8 +2253,6 @@ MonoBehaviour:
   LVUP: {fileID: 1760414680}
   currency1_num: 0
   currency2_num: 0
-  currency1_text: {fileID: 530413602}
-  currency2_text: {fileID: 264822395}
 --- !u!114 &530413605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2207,6 +2265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c26866ee5060d488161c6377f092e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currency1_text: {fileID: 0}
+  currency2_text: {fileID: 0}
 --- !u!1 &638991637
 GameObject:
   m_ObjectHideFlags: 0
