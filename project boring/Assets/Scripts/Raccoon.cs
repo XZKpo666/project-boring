@@ -43,10 +43,12 @@ public class Raccoon : MonoBehaviour
             timer = 0;
         }
         currency1_text.text = Raccoom_OPT1(LV).ToString();
-        currency2_text.text = Raccoom_OPT2(LV).ToString();      
+        currency2_text.text = Raccoom_OPT2(LV).ToString();
+
     }
     void LV_up()
     {
+        int []raccoom_unlock_money = new int[] {0,10,12,14,17,20,24,29,35,42,50,60,72};
         LV+=1;
     }
     public int Raccoon_LV(int LV)
