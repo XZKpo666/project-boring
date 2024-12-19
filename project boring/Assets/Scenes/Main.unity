@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 71394543}
   - component: {fileID: 71394545}
   - component: {fileID: 71394544}
+  - component: {fileID: 71394546}
   m_Layer: 0
   m_Name: All-crrency
   m_TagString: Untagged
@@ -406,6 +407,8 @@ MonoBehaviour:
   currency2_num: 0
   currency1_text: {fileID: 236973420}
   currency2_text: {fileID: 1872913974}
+  NextLV_text: {fileID: 1837157041}
+  LV: 1
 --- !u!114 &71394545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +423,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currency1_text: {fileID: 530413602}
   currency2_text: {fileID: 264822395}
+  currency1: 0
+  currency2: 0
+--- !u!114 &71394546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71394542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedefb02e6116c543baafd93e65871b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency1_text: {fileID: 2134197700}
+  currency2_text: {fileID: 83025889}
+  unlock_money_text: {fileID: 1961003117}
 --- !u!1 &83025887
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +1002,8 @@ MonoBehaviour:
   currency2_num: 0
   currency1_text: {fileID: 0}
   currency2_text: {fileID: 0}
+  NextLV_text: {fileID: 0}
+  LV: 1
 --- !u!114 &241479433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3672,7 +3694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &911690826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5202,7 +5224,7 @@ RectTransform:
   m_GameObject: {fileID: 1294997834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7275245, y: 3.7275245, z: 3.7275245}
+  m_LocalScale: {x: 3.4309998, y: 3.4309998, z: 3.4309998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1640231551}
@@ -5210,7 +5232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -457, y: -65}
+  m_AnchoredPosition: {x: -464, y: -62.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1294997836
@@ -5233,7 +5255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d4ba818485833d4d899ee7cac05abf7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0eae609546c004a4e87750bff05f557a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7178,7 +7200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -28.7}
+  m_AnchoredPosition: {x: 0, y: -15.4}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837157041
@@ -7214,9 +7236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LV UP
-
-'
+  m_Text: LV UP
 --- !u!222 &1837157042
 CanvasRenderer:
   m_ObjectHideFlags: 0

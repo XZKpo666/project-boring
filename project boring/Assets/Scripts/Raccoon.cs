@@ -16,16 +16,21 @@ public class Raccoon : MonoBehaviour
     public double currency2_num;
     public Text currency1_text;
     public Text currency2_text;
-    private int LV = 1;
+    public Text NextLV_text;
+    public int LV = 1;
     private float timer = 0;
+    private Currency Currency;
+    private double now_currency1;
     // Start is called before the first frame update
     void Start()
     {
-        if (Public_LV_UP != null)
+        Currency = GetComponent<Currency>();
+
+        if (Public_LV_UP != null )
         {
             Public_LV_UP.onClick.AddListener(LV_up);
         }
-        if (Raccoon_LV_UP != null)
+        if (Raccoon_LV_UP != null )
         {
             Raccoon_LV_UP.onClick.AddListener(LV_up);
         }
@@ -36,6 +41,7 @@ public class Raccoon : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime ;
+
         if(timer >= 1)
         {
             currency1_num = currency1_num + Math.Round(Raccoom_OPT1(Raccoon_LV(LV))+(Raccoom_OPT1(Raccoon_LV(LV))*Raccoom_Item1(Item1_LV(0))),0);            
@@ -44,12 +50,21 @@ public class Raccoon : MonoBehaviour
         }
         currency1_text.text = Raccoom_OPT1(LV).ToString();
         currency2_text.text = Raccoom_OPT2(LV).ToString();
+        NextLV_text.text = Raccoom_unlock_money(LV).ToString();
 
     }
     void LV_up()
-    {
-        int []raccoom_unlock_money = new int[] {0,10,12,14,17,20,24,29,35,42,50,60,72};
-        LV+=1;
+    {        
+        if(Currency.currency1 >= Raccoom_unlock_money(LV))
+        {
+            currency1_num = currency1_num - Raccoom_unlock_money(LV);            
+            LV+=1;    
+        }        
+    }
+    public int Raccoom_unlock_money(int LV)
+    {    
+        int []raccoom_unlock_money = new int[] {0,15,21,29,41,57,80,112,158,223,309,433,607};
+        return raccoom_unlock_money[LV];
     }
     public int Raccoon_LV(int LV)
     {
