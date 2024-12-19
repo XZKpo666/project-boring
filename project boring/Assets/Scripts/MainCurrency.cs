@@ -20,8 +20,8 @@ public class MainCurrency : MonoBehaviour
     {
         Raccoon_LV = Raccoon.LV;
 
-        currency1_text.text = Raccoon.Raccoom_OPT1(Raccoon_LV).ToString();
-        currency2_text.text = Raccoon.Raccoom_OPT2(Raccoon_LV).ToString();
+        currency1_text.text = Raccoon.currency1_text.text;
+        currency2_text.text = Raccoon.currency2_text.text;
         unlock_money_text.text = Raccoon.Raccoom_unlock_money(Raccoon_LV).ToString();
     }
 }
