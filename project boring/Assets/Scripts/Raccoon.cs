@@ -21,18 +21,19 @@ public class Raccoon : MonoBehaviour
     public Image iteam;
     public double currency1_num;
     public double currency2_num;    
-    public int LV = 1;
-    public int item1_LV = 1;
-    public int item2_LV = 1;
+    public int LV ;
+    public int item1_LV ;
+    public int item2_LV ;
     public int now_item ;
     
     private float timer = 0;
     private Currency Currency;
+    private GameManager GameManager ;
     // Start is called before the first frame update
     void Start()
     {
         Currency = GetComponent<Currency>();
-
+        Debug.Log("start ");        
         if (Public_LV_UP != null )
         {
             Public_LV_UP.onClick.AddListener(LV_up);
@@ -56,7 +57,10 @@ public class Raccoon : MonoBehaviour
         if (Raccoon_item2_LV_UP != null )
         {
             Raccoon_item2_LV_UP.onClick.AddListener(Item2_LV);
-        }
+        }                
+        GameManager = FindAnyObjectByType<GameManager>();
+        GameManager.LoadGameState();
+        
         
     }
 
