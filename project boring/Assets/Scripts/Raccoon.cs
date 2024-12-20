@@ -33,7 +33,6 @@ public class Raccoon : MonoBehaviour
     void Start()
     {
         Currency = GetComponent<Currency>();
-        Debug.Log("start ");        
         if (Public_LV_UP != null )
         {
             Public_LV_UP.onClick.AddListener(LV_up);
@@ -57,9 +56,11 @@ public class Raccoon : MonoBehaviour
         if (Raccoon_item2_LV_UP != null )
         {
             Raccoon_item2_LV_UP.onClick.AddListener(Item2_LV);
-        }                
+        }
         GameManager = FindAnyObjectByType<GameManager>();
         GameManager.LoadGameState();
+
+        
         
         
     }

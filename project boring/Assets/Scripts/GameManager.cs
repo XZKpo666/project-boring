@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     // 您希望持久化的數據
     
     private Raccoon Raccoon;
-    private SwitchScenes SwitchScenes;
     public int Raccoon_LV;
     public int Raccoom_Item1_LV;
     public int Raccoom_Item2_LV;
