@@ -13,6 +13,7 @@ public class Fish_money : MonoBehaviour
     {
         text = GetComponent<Text>();
         money = Random.Range(500,1500);
+        String = money.ToString();
         text.text = String;
         
     }
