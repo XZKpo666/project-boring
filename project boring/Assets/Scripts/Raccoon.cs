@@ -13,6 +13,8 @@ public class Raccoon : MonoBehaviour
     public double Currency2;
     public double Currency1_NoIteam;
     public double Currency2_NoIteam;
+    public double Currency1_Iteam;
+    public double Currency2_Iteam;
     private int Start_Currency1=10;
     private int Start_Currency2=3;
     private float timer = 0;
@@ -42,8 +44,10 @@ public class Raccoon : MonoBehaviour
     {
         Currency1_NoIteam = Math.Round(Start_Currency1* Math.Pow(1.2,Raccoon_LV),0);
         Currency2_NoIteam = Math.Round(Start_Currency2* Math.Pow(1.2,Raccoon_LV),0);
-        Currency1 = Currency1 + Currency1_NoIteam + Math.Round(Currency1_NoIteam*(1+0.1*Raccoon_Iteam1_LV),0);
-        Currency2 = Currency2 + Currency2_NoIteam + Math.Round(Currency2_NoIteam*(1+0.1*Raccoon_Iteam2_LV),0);        
+        Currency1_Iteam = Math.Round(Currency1_NoIteam*(1+0.1*Raccoon_Iteam1_LV),0);
+        Currency2_Iteam = Math.Round(Currency2_NoIteam*(1+0.1*Raccoon_Iteam2_LV),0);
+        Currency1 = Currency1 + Currency1_NoIteam + Currency1_Iteam;
+        Currency2 = Currency2 + Currency2_NoIteam + Currency2_Iteam;        
     }
     void LoagingDate()
     {
