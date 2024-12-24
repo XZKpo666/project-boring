@@ -6,18 +6,15 @@ using UnityEngine.SceneManagement;
 public class SwitchScenes : MonoBehaviour
 {
     
-    private GameManager GameManager ;
+    
     public void SwitchFishing()
     {
-        SceneController.Instance.LoadScene("Fishing");
-        GameManager = FindAnyObjectByType<GameManager>();
-        GameManager.SaveGameState();                   
-    }
+        SceneManager.LoadScene(1);
+    }                  
+    
 
     public void SwitchMain()
     {        
-        SceneController.Instance.LoadScene("Main");
-        GameManager = FindAnyObjectByType<GameManager>();
-        GameManager.LoadGameState();
+        SceneManager.LoadScene(0);
     }
 }
