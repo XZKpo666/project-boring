@@ -30,7 +30,7 @@ public class Iteam : MonoBehaviour
         {
             Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_1");
             Iteam_name.text = "相機";
-            Iteam_LV.text = "LV : "+GameManagerDate.Raccoon_Iteam1_LV.ToString();
+            Iteam_LV.text = "LV: "+GameManagerDate.Raccoon_Iteam1_LV.ToString();
             Iteam_descriptionion1.text = "金幣生成 X" + (1+0.1*GameManagerDate.Raccoon_Iteam1_LV)*100 + "%";
             Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Raccoon_Iteam1_LVmoney;
             Image.sprite = Load; 
@@ -39,9 +39,27 @@ public class Iteam : MonoBehaviour
         {
             Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
             Iteam_name.text = "背包";
-            Iteam_LV.text = "LV : "+GameManagerDate.Raccoon_Iteam2_LV.ToString();
+            Iteam_LV.text = "LV: "+GameManagerDate.Raccoon_Iteam2_LV.ToString();
             Iteam_descriptionion1.text = "素材生成 X" + (1+0.1*GameManagerDate.Raccoon_Iteam2_LV)*100 + "%";
             Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Raccoon_Iteam2_LVmoney;
+            Image.sprite = Load; 
+        }
+        if(Iteam_number == 2)
+        {
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_1");
+            Iteam_name.text = "釣竿";
+            Iteam_LV.text = "LV: "+GameManagerDate.Duck_Iteam1_LV.ToString();
+            Iteam_descriptionion1.text = "金幣生成 X" + (1+0.1*GameManagerDate.Duck_Iteam1_LV)*100 + "%";
+            Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Duck_Iteam1_LVmoney;
+            Image.sprite = Load; 
+        }
+        if(Iteam_number == 3)
+        {
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
+            Iteam_name.text = "漁夫帽";
+            Iteam_LV.text = "LV: "+GameManagerDate.Duck_Iteam2_LV.ToString();
+            Iteam_descriptionion1.text = "素材生成 X" + (1+0.1*GameManagerDate.Duck_Iteam2_LV)*100 + "%";
+            Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Duck_Iteam2_LVmoney;
             Image.sprite = Load; 
         }
     }

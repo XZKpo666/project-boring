@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class All_Currency : MonoBehaviour
 {
     private Raccoon Raccoon;
+    private Duck Duck;
     public Text Currency1;
     public Text Currency2;
     public double All_Currency1 ;
@@ -15,6 +16,7 @@ public class All_Currency : MonoBehaviour
     void Start()
     {
         Raccoon = GetComponent<Raccoon>();
+        Duck = GetComponent<Duck>();
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class All_Currency : MonoBehaviour
     }
     void Currency()
     {        
-        All_Currency1 = GameManagerDate.All_Currency1 + Raccoon.Currency1;
-        All_Currency2 = GameManagerDate.All_Currency2 + Raccoon.Currency2;
+        All_Currency1 = GameManagerDate.All_Currency1 + Raccoon.Currency1 + Duck.Currency1;
+        All_Currency2 = GameManagerDate.All_Currency2 + Raccoon.Currency2 + Duck.Currency2;
     }
 }

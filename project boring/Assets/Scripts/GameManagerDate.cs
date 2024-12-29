@@ -5,14 +5,21 @@ using UnityEngine;
 
 public static class GameManagerDate 
 {
+    public static int Iteam_number;
     public static int Raccoon_LV = 0;
     public static double Raccoon_LVmoney = 150;
     public static int Raccoon_Iteam1_LV;
     public static int Raccoon_Iteam2_LV;
     public static double Raccoon_Iteam1_LVmoney = 20;
-    public static double Raccoon_Iteam2_LVmoney = 20;    
+    public static double Raccoon_Iteam2_LVmoney = 20;
+    public static int Duck_LV = 0;
+    public static double Duck_LVmoney = 15000;
+    public static int Duck_Iteam1_LV;
+    public static int Duck_Iteam2_LV;
+    public static double Duck_Iteam1_LVmoney = 2000;
+    public static double Duck_Iteam2_LVmoney = 2000;    
     public static double All_Currency1;
     public static double All_Currency2;
-    public static int Iteam_number;
+    
 
 }
