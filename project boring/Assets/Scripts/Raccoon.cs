@@ -34,11 +34,7 @@ public class Raccoon : MonoBehaviour
         {
             StartCoroutine("Raccoon_OPT");
             timer = 0;
-        }
-        Debug.Log("Currency1 = " +Currency1+" Currency2 = "+Currency2);
-        Debug.Log("LV :" + Raccoon_LV+" LV_Itema1 :" + Raccoon_Iteam1_LV + " LV_Itema2 :" + Raccoon_Iteam2_LV);
-
-        
+        } 
     }
     void Raccoon_OPT()
     {
