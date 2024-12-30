@@ -9,7 +9,7 @@ public class LV_up : MonoBehaviour
     public void LV_Up()
     {
         All_Currency = FindAnyObjectByType<All_Currency>();
-        if(All_Currency.All_Currency1 > GameManagerDate.Raccoon_LVmoney)
+        if(All_Currency.All_Currency1 > GameManagerDate.Raccoon_LVmoney  )
         {
             GameManagerDate.All_Currency1 -= GameManagerDate.Raccoon_LVmoney;
             GameManagerDate.Raccoon_LV+=1;

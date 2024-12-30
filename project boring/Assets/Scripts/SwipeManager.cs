@@ -5,133 +5,60 @@ using UnityEngine.UI;
 
 public class SwipeManager : MonoBehaviour
 {
-    public RectTransform button1;
-    public RectTransform button2;
-    public RectTransform button3;
-
-    private Vector2 startTouchPosition;
-    private Vector2 endTouchPosition;
-    private bool isSwiping = false;
-
-    // 定義佈局
-    private enum LayoutState { Initial, Swiped }
-    private LayoutState currentState = LayoutState.Initial;
-
-    void Update()
+    public Button Raccoon_island;
+    public Button Duck_island;
+    public Button Ice_island;
+    void Start()
     {
-        HandleTouchInput();
+        // 綁定按鈕點擊事件
+        Raccoon_island.onClick.AddListener(Raccoon_Island);
+        Duck_island.onClick.AddListener(Duck_Island);
+        Ice_island.onClick.AddListener(Ice_Island);
     }
-
-    void HandleTouchInput()
+    void Raccoon_Island()
     {
-        // 開始觸摸
-        if (Input.GetMouseButtonDown(0))
-        {
-            startTouchPosition = Input.mousePosition;
-            isSwiping = true;
-        }
+        RectTransform Raccoon_island_Transform = Raccoon_island.GetComponent<RectTransform>();
+        RectTransform Duck_island_Transform = Duck_island.GetComponent<RectTransform>();
+        RectTransform Ice_island_Transform = Ice_island.GetComponent<RectTransform>();
 
-        // 結束觸摸
-        if (Input.GetMouseButtonUp(0) && isSwiping)
-        {
-            endTouchPosition = Input.mousePosition;
-            isSwiping = false;
-            DetectSwipe();
-        }
+        Raccoon_island_Transform.anchoredPosition = Vector2.zero;
+        Raccoon_island_Transform.sizeDelta = new Vector2(500,500);
+
+        Duck_island_Transform.anchoredPosition = new Vector2(180,-260);
+        Duck_island_Transform.sizeDelta = new Vector2(130,130);
+
+        Ice_island_Transform.anchoredPosition = Vector2.zero;
+        Ice_island_Transform.sizeDelta = Vector2.zero;
     }
-
-    void DetectSwipe()
+    void Duck_Island()
     {
-        float deltaX = endTouchPosition.x - startTouchPosition.x;
-        float deltaY = endTouchPosition.y - startTouchPosition.y;
+        RectTransform Raccoon_island_Transform = Raccoon_island.GetComponent<RectTransform>();
+        RectTransform Duck_island_Transform = Duck_island.GetComponent<RectTransform>();
+        RectTransform Ice_island_Transform = Ice_island.GetComponent<RectTransform>();
 
-        // 設置閾值以避免誤判
-        float swipeThreshold = 50f;
+        Raccoon_island_Transform.anchoredPosition = new Vector2(-180,260);
+        Raccoon_island_Transform.sizeDelta = new Vector2(130,130);
 
-        if (Mathf.Abs(deltaX) > swipeThreshold || Mathf.Abs(deltaY) > swipeThreshold)
-        {
-            if (deltaX > 0 && deltaY > 0)
-            {
-                // 右下滑
-                OnSwipeRightDown();
-            }
-            else if (deltaX < 0 && deltaY > 0)
-            {
-                // 左下滑
-                OnSwipeLeftDown();
-            }
-            else if (deltaX > 0 && deltaY < 0)
-            {
-                // 右上滑
-                OnSwipeRightUp();
-            }
-            else if (deltaX < 0 && deltaY < 0)
-            {
-                // 左上滑
-                OnSwipeLeftUp();
-            }
-        }
+        Duck_island_Transform.anchoredPosition = Vector2.zero;
+        Duck_island_Transform.sizeDelta = new Vector2(500,500);
+
+        Ice_island_Transform.anchoredPosition = new Vector2(180,-260);
+        Ice_island_Transform.sizeDelta = new Vector2(130,130);
     }
-
-    void OnSwipeRightDown()
+    void Ice_Island()
     {
-        if (currentState == LayoutState.Initial)
-        {
-            SwitchToSwipedLayout();
-        }
-    }
+        RectTransform Raccoon_island_Transform = Raccoon_island.GetComponent<RectTransform>();
+        RectTransform Duck_island_Transform = Duck_island.GetComponent<RectTransform>();
+        RectTransform Ice_island_Transform = Ice_island.GetComponent<RectTransform>();
 
-    void OnSwipeLeftUp()
-    {
-        if (currentState == LayoutState.Swiped)
-        {
-            SwitchToInitialLayout();
-        }
-    }
+        Raccoon_island_Transform.anchoredPosition = Vector2.zero;
+        Raccoon_island_Transform.sizeDelta = Vector2.zero;
 
-    // 你可以根據需求實現其他滑動方向的處理
-    void OnSwipeLeftDown() { /* ... */ }
-    void OnSwipeRightUp() { /* ... */ }
+        Duck_island_Transform.anchoredPosition = new Vector2(-180,260);
+        Duck_island_Transform.sizeDelta = new Vector2(130,130);
 
-    void SwitchToSwipedLayout()
-    {
-        currentState = LayoutState.Swiped;
-
-        StartCoroutine(AnimateButton(button1, new Vector2(-160, 300), new Vector2(150, 150)));
-        StartCoroutine(AnimateButton(button2, Vector2.zero, new Vector2(450, 450)));
-        StartCoroutine(AnimateButton(button3, new Vector2(160, -300), new Vector2(150, 150)));
-    }
-
-    void SwitchToInitialLayout()
-    {
-        currentState = LayoutState.Initial;
-
-        StartCoroutine(AnimateButton(button1, Vector2.zero, new Vector2(450, 450)));
-        StartCoroutine(AnimateButton(button2, new Vector2(160, -300), new Vector2(150, 150)));
-        StartCoroutine(AnimateButton(button3, new Vector2(0, 0), new Vector2(0, 0))); // 或其他適當的尺寸
-    }
-
-    IEnumerator AnimateButton(RectTransform button, Vector2 targetPosition, Vector2 targetSize)
-    {
-        float duration = 0.5f;
-        float elapsed = 0f;
-
-        Vector2 initialPosition = button.anchoredPosition;
-        Vector2 initialSize = button.sizeDelta;
-
-        while (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / duration);
-
-            button.anchoredPosition = Vector2.Lerp(initialPosition, targetPosition, t);
-            button.sizeDelta = Vector2.Lerp(initialSize, targetSize, t);
-
-            yield return null;
-        }
-
-        button.anchoredPosition = targetPosition;
-        button.sizeDelta = targetSize;
+        Ice_island_Transform.anchoredPosition = Vector2.zero;
+        Ice_island_Transform.sizeDelta = new Vector2(500,500);
     }
 }
 

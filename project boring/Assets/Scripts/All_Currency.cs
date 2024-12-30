@@ -33,7 +33,8 @@ public class All_Currency : MonoBehaviour
         
     }
     void Currency()
-    {        
+    {
+                
         All_Currency1 = GameManagerDate.All_Currency1 + Raccoon.Currency1 + Duck.Currency1;
         All_Currency2 = GameManagerDate.All_Currency2 + Raccoon.Currency2 + Duck.Currency2;
     }
