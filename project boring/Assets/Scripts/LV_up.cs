@@ -6,15 +6,19 @@ using UnityEngine;
 public class LV_up : MonoBehaviour
 {
     private All_Currency All_Currency;    
-    public void LV_Up()
+    public void LV_Up_Raccoon()
     {
         All_Currency = FindAnyObjectByType<All_Currency>();
-        if(All_Currency.All_Currency1 > GameManagerDate.Raccoon_LVmoney  )
+        if(All_Currency.All_Currency1 > GameManagerDate.Raccoon_LVmoney)
         {
             GameManagerDate.All_Currency1 -= GameManagerDate.Raccoon_LVmoney;
             GameManagerDate.Raccoon_LV+=1;
             GameManagerDate.Raccoon_LVmoney = Math.Round(GameManagerDate.Raccoon_LVmoney*1.4,0);
-        }
+        }                
+    }
+    public void LV_Up_Duck()
+    {
+        All_Currency = FindAnyObjectByType<All_Currency>();        
         if(All_Currency.All_Currency1 > GameManagerDate.Duck_LVmoney)
         {
             GameManagerDate.All_Currency1 -= GameManagerDate.Duck_LVmoney;

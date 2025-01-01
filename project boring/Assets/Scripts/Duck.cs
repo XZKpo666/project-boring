@@ -15,8 +15,8 @@ public class Duck : MonoBehaviour
     public double Currency2_NoIteam;
     public double Currency1_Iteam;
     public double Currency2_Iteam;
-    private int Start_Currency1=1000;
-    private int Start_Currency2=300;
+    private int Start_Currency1=500;
+    private int Start_Currency2=30;
     private float timer = 0;
     // Start is called before the first frame update
     void Start()
@@ -27,14 +27,16 @@ public class Duck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine("LoagingDate");        
-
-        timer += Time.deltaTime ;
-        if(timer >= 1)
+        if(GameManagerDate.Duck_Lock == 1)
         {
-            StartCoroutine("Duck_OPT");
-            timer = 0;
-        }        
+            StartCoroutine("LoagingDate");
+            timer += Time.deltaTime ;
+            if(timer >= 1)
+            {
+                StartCoroutine("Duck_OPT");
+                timer = 0;
+            }
+        }                
     }
     void Duck_OPT()
     {

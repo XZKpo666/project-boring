@@ -12,12 +12,15 @@ public static class GameManagerDate
     public static int Raccoon_Iteam2_LV;
     public static double Raccoon_Iteam1_LVmoney = 20;
     public static double Raccoon_Iteam2_LVmoney = 20;
+    public static int Duck_Lock = 0;
+    public static int Duck_Lock_money = 30000;
     public static int Duck_LV = 0;
     public static double Duck_LVmoney = 15000;
     public static int Duck_Iteam1_LV;
     public static int Duck_Iteam2_LV;
     public static double Duck_Iteam1_LVmoney = 2000;
-    public static double Duck_Iteam2_LVmoney = 2000;    
+    public static double Duck_Iteam2_LVmoney = 2000;
+    public static int Ice_Lock_money = 3000000;    
     public static double All_Currency1;
     public static double All_Currency2;
     

@@ -27,7 +27,7 @@ public class SwipeManager : MonoBehaviour
         Duck_island_Transform.anchoredPosition = new Vector2(180,-260);
         Duck_island_Transform.sizeDelta = new Vector2(130,130);
 
-        Ice_island_Transform.anchoredPosition = Vector2.zero;
+        Ice_island_Transform.anchoredPosition = new Vector2(220,500);
         Ice_island_Transform.sizeDelta = Vector2.zero;
     }
     void Duck_Island()
