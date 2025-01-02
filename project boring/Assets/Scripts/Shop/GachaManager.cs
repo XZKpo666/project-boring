@@ -12,17 +12,23 @@ public class GachaManager : MonoBehaviour
 
     public void Pull()
     {
-        if (_prizePool.Length == 0)
+        if(GameManagerDate.All_Currency3 >500)
         {
-            _prize._name.text = "�⧹�F";
-            return;
-        }
-        int randomIndex = Random.Range(0, _prizePool.Length);
-        PrizeInfo drawnCard = _prizePool[randomIndex];
+            if (_prizePool.Length == 0)
+            {
+                _prize._name.text = "抽完了";
+                return;
+            }
+            GameManagerDate.All_Currency3 -=500;
 
-        _prize._img.sprite = drawnCard._image;
-        _prize._name.text = drawnCard._name;
-        RemoveCardFromPool(randomIndex);
+            int randomIndex = Random.Range(0, _prizePool.Length);
+            PrizeInfo drawnCard = _prizePool[randomIndex];
+
+            _prize._img.sprite = drawnCard._image;
+            _prize._name.text = drawnCard._name;
+            RemoveCardFromPool(randomIndex);
+        }  
+        
     }
 
     private void RemoveCardFromPool(int index)
