@@ -23,6 +23,7 @@ public static class GameManagerDate
     public static int Ice_Lock_money = 3000000;    
     public static double All_Currency1;
     public static double All_Currency2;
+    public static int All_Currency3;
     
 
 }
