@@ -25,8 +25,8 @@ public class Mission_UI : MonoBehaviour
     {
         if(Mission_num == 1)
         {
-            Mission_text_1.text = "賺取" + 1000.ToString() + "元";
-            Mission_text_2.text = All_Currency.All_Currency1.ToString() + "/" + 1000.ToString();
+            Mission_text_1.text = "賺取" + GameManagerDate.Mission_1_money.ToString() + "元";
+            Mission_text_2.text = All_Currency.All_Currency1.ToString() + "/" + GameManagerDate.Mission_1_money.ToString();
         }
     }
 }
