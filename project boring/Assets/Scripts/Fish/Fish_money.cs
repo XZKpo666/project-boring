@@ -13,6 +13,7 @@ public class Fish_money : MonoBehaviour
     {
         text = GetComponent<Text>();
         money = Random.Range(500,1500);
+        GameManagerDate.All_Currency1+=money; 
         String = money.ToString();
         text.text = String;
         
