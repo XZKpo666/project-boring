@@ -62,6 +62,25 @@ public class Iteam : MonoBehaviour
             Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Duck_Iteam2_LVmoney;
             Image.sprite = Load; 
         }
+        if(Iteam_number == 4)
+        {
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
+            Iteam_name.text = "冰屋";
+            Iteam_LV.text = "LV: "+GameManagerDate.Ice_Iteam1_LV.ToString();
+            Iteam_descriptionion1.text = "金幣生成 X" + (1+0.1*GameManagerDate.Ice_Iteam1_LV)*100 + "%";
+            Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Ice_Iteam1_LVmoney;
+            Image.sprite = Load; 
+        }
+        if(Iteam_number == 5)
+        {
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
+            Iteam_name.text = "冰塊";
+            Iteam_LV.text = "LV: "+GameManagerDate.Ice_Iteam2_LV.ToString();
+            Iteam_descriptionion1.text = "素材生成 X" + (1+0.1*GameManagerDate.Ice_Iteam2_LV)*100 + "%";
+            Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Ice_Iteam2_LVmoney;
+            Image.sprite = Load; 
+        }
+
     }
     
 }

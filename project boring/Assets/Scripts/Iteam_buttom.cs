@@ -10,6 +10,8 @@ public class Iteam_buttom : MonoBehaviour
     public Button Iteam2;
     public Button Iteam3;
     public Button Iteam4;
+    public Button Iteam5;
+    public Button Iteam6;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class Iteam_buttom : MonoBehaviour
         Iteam2.onClick.AddListener(Iteam_2);
         Iteam3.onClick.AddListener(Iteam_3);
         Iteam4.onClick.AddListener(Iteam_4);
+        Iteam5.onClick.AddListener(Iteam_5);
+        Iteam6.onClick.AddListener(Iteam_6);
     }
     public void Iteam_1()
     {
@@ -34,5 +38,13 @@ public class Iteam_buttom : MonoBehaviour
     public void Iteam_4()
     {
         GameManagerDate.Iteam_number=3;      
+    }
+    public void Iteam_5()
+    {
+        GameManagerDate.Iteam_number=4;      
+    }
+    public void Iteam_6()
+    {
+        GameManagerDate.Iteam_number=5;      
     }
 }

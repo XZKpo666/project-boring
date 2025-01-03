@@ -7,6 +7,7 @@ public class All_Currency : MonoBehaviour
 {
     private Raccoon Raccoon;
     private Duck Duck;
+    private Seal Seal;
     public Text Currency1;
     public Text Currency2;
     public double All_Currency1 ;
@@ -17,6 +18,7 @@ public class All_Currency : MonoBehaviour
     {
         Raccoon = GetComponent<Raccoon>();
         Duck = GetComponent<Duck>();
+        Seal = GetComponent<Seal>();
     }
 
     // Update is called once per frame
@@ -35,7 +37,7 @@ public class All_Currency : MonoBehaviour
     void Currency()
     {
                 
-        All_Currency1 = GameManagerDate.All_Currency1 + Raccoon.Currency1 + Duck.Currency1;
-        All_Currency2 = GameManagerDate.All_Currency2 + Raccoon.Currency2 + Duck.Currency2;
+        All_Currency1 = GameManagerDate.All_Currency1 + Raccoon.Currency1 + Duck.Currency1 + Seal.Currency1;
+        All_Currency2 = GameManagerDate.All_Currency2 + Raccoon.Currency2 + Duck.Currency2 + Seal.Currency2;
     }
 }

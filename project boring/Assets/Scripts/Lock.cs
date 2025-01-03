@@ -32,6 +32,7 @@ public class Lock : MonoBehaviour
         if(All_Currency.All_Currency1>GameManagerDate.Ice_Lock_money)
         {
             GameManagerDate.All_Currency1 -= GameManagerDate.Ice_Lock_money;
+            GameManagerDate.Ice_Lock = 1;
             Destroy(gameObject);
         }
     }
