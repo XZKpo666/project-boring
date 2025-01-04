@@ -12,7 +12,7 @@ public class GachaManager : MonoBehaviour
 
     public void Pull()
     {
-        if(GameManagerDate.All_Currency3 >500)
+        if(GameManagerDate.All_Currency3 >= 500)
         {
             if (_prizePool.Length == 0)
             {

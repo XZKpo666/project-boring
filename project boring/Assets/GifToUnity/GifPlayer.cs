@@ -9,6 +9,8 @@ namespace GifImporter
     {
         public Gif Gif;
         public Button PlayButton; // 連接你的按鈕
+        public GameObject gameObject1;
+        public GameObject gameObject2;
 
         private int   _index;
         private float _flip;
@@ -40,6 +42,8 @@ namespace GifImporter
             {
                 // 停止播放
                 _isPlaying = false;
+                gameObject1.SetActive(!gameObject1.activeSelf);
+                gameObject2.SetActive(!gameObject2.activeSelf);
                 return;
             }
 
