@@ -46,7 +46,7 @@ public class Iteam : MonoBehaviour
         }
         if(Iteam_number == 2)
         {
-            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_1");
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/IMG_0768");
             Iteam_name.text = "釣竿";
             Iteam_LV.text = "LV: "+GameManagerDate.Duck_Iteam1_LV.ToString();
             Iteam_descriptionion1.text = "金幣生成 X" + (1+0.1*GameManagerDate.Duck_Iteam1_LV)*100 + "%";
@@ -55,7 +55,7 @@ public class Iteam : MonoBehaviour
         }
         if(Iteam_number == 3)
         {
-            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/IMG_0144");
             Iteam_name.text = "漁夫帽";
             Iteam_LV.text = "LV: "+GameManagerDate.Duck_Iteam2_LV.ToString();
             Iteam_descriptionion1.text = "素材生成 X" + (1+0.1*GameManagerDate.Duck_Iteam2_LV)*100 + "%";
@@ -64,8 +64,8 @@ public class Iteam : MonoBehaviour
         }
         if(Iteam_number == 4)
         {
-            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
-            Iteam_name.text = "冰屋";
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/IMG_0143");
+            Iteam_name.text = "金項鍊";
             Iteam_LV.text = "LV: "+GameManagerDate.Ice_Iteam1_LV.ToString();
             Iteam_descriptionion1.text = "金幣生成 X" + (1+0.1*GameManagerDate.Ice_Iteam1_LV)*100 + "%";
             Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Ice_Iteam1_LVmoney;
@@ -73,8 +73,8 @@ public class Iteam : MonoBehaviour
         }
         if(Iteam_number == 5)
         {
-            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/raccoon_item_2");
-            Iteam_name.text = "冰塊";
+            Sprite Load = Resources.Load<Sprite>("UI/CharacterInterface/IMG_0142");
+            Iteam_name.text = "雪茄";
             Iteam_LV.text = "LV: "+GameManagerDate.Ice_Iteam2_LV.ToString();
             Iteam_descriptionion1.text = "素材生成 X" + (1+0.1*GameManagerDate.Ice_Iteam2_LV)*100 + "%";
             Iteam_descriptionion2.text = "素材 X" + GameManagerDate.Ice_Iteam2_LVmoney;

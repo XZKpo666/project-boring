@@ -2405,6 +2405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 766946525307262559, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d44d05d2d493a0c4bb14ccff11ea3e4d, type: 3}
     - target: {fileID: 768614694775010761, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_Name
       value: Ice
@@ -2425,6 +2429,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u51B0\u5CF6"
       objectReference: {fileID: 0}
+    - target: {fileID: 6441598691055886140, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9258943a84b808d419162c718afbcb96, type: 3}
     - target: {fileID: 6587166085885972956, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2433,6 +2441,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LV_Up_Seal
       objectReference: {fileID: 0}
+    - target: {fileID: 6817547763949918758, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b397f7b03e2981346b71a08a39957139, type: 3}
     - target: {fileID: 9051917525534349195, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7084,6 +7096,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1119414040}
+    - target: {fileID: 9097610634120430818, guid: 0ecf4cf502ee4984ebe4c348d63d766d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 229.1343
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097610634120430818, guid: 0ecf4cf502ee4984ebe4c348d63d766d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70.1383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097610634120430818, guid: 0ecf4cf502ee4984ebe4c348d63d766d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -70.3312
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097610634120430818, guid: 0ecf4cf502ee4984ebe4c348d63d766d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 273.57776
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8960,6 +8988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 766946525307262559, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ea06bc5f84c68c4796bfa97c21440e9, type: 3}
     - target: {fileID: 768614694775010761, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_Name
       value: Duck
@@ -8980,6 +9012,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u9D28\u5B50"
       objectReference: {fileID: 0}
+    - target: {fileID: 6441598691055886140, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8eac02d59456b3a48ab2d994720125bd, type: 3}
     - target: {fileID: 6587166085885972956, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8988,6 +9024,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LV_Up_Duck
       objectReference: {fileID: 0}
+    - target: {fileID: 6817547763949918758, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52aced87c54f4af41b081ef6c780bb75, type: 3}
     - target: {fileID: 9051917525534349195, guid: cf23e2fe3a62ebc45b1c2805e37997a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
