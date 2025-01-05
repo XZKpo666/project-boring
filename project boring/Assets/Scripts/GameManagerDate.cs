@@ -6,6 +6,7 @@ using UnityEngine;
 public static class GameManagerDate 
 {
     public static int Iteam_number;
+    public static int Shop;
     
     public static int Raccoon_LV = 0;
     public static double Raccoon_LVmoney = 150;

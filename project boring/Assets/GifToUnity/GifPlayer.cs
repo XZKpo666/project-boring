@@ -11,16 +11,16 @@ namespace GifImporter
         public Button PlayButton; // 連接你的按鈕
         public GameObject gameObject1;
         public GameObject gameObject2;
+        public int Shop = 1;
 
         private int   _index;
         private float _flip;
         private Gif   _setGif;
         private bool  _isPlaying;
-
         private void Start()
         {
-            if (PlayButton != null)
-            {
+            if (PlayButton != null )
+            {                
                 PlayButton.onClick.AddListener(PlayGif); // 按鈕點擊觸發播放
             }
         }
@@ -41,9 +41,15 @@ namespace GifImporter
             if (index > frames.Count - 1)
             {
                 // 停止播放
+                var frame = frames[0];
+                Apply(frame);
                 _isPlaying = false;
-                gameObject1.SetActive(!gameObject1.activeSelf);
-                gameObject2.SetActive(!gameObject2.activeSelf);
+                if(Shop == 1)
+                {
+                    gameObject1.SetActive(!gameObject1.activeSelf);
+                    gameObject2.SetActive(!gameObject2.activeSelf);
+                }                
+                
                 return;
             }
 
