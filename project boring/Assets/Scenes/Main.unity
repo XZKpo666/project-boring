@@ -591,6 +591,7 @@ MonoBehaviour:
   PlayButton: {fileID: 389164650}
   gameObject1: {fileID: 0}
   gameObject2: {fileID: 0}
+  Shop: 1
 --- !u!114 &110193552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3484,6 +3485,7 @@ MonoBehaviour:
   PlayButton: {fileID: 1833492303}
   gameObject1: {fileID: 0}
   gameObject2: {fileID: 0}
+  Shop: 1
 --- !u!114 &768505738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4475,6 +4477,7 @@ MonoBehaviour:
   PlayButton: {fileID: 1751618490}
   gameObject1: {fileID: 0}
   gameObject2: {fileID: 0}
+  Shop: 1
 --- !u!114 &1070531977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5132,7 +5135,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 0.62, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5171,6 +5174,7 @@ MonoBehaviour:
   PlayButton: {fileID: 1609986134}
   gameObject1: {fileID: 1460038305}
   gameObject2: {fileID: 716524680}
+  Shop: 1
 --- !u!1 &1181791915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6681,6 +6685,7 @@ MonoBehaviour:
   PlayButton: {fileID: 348553555}
   gameObject1: {fileID: 0}
   gameObject2: {fileID: 0}
+  Shop: 1
 --- !u!114 &1457805223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7241,6 +7246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prize: {fileID: 1028963053}
+  targetScript1: {fileID: 0}
+  targetScript2: {fileID: 0}
   _prizePool:
   - {fileID: 11400000, guid: 959d4e370b8d5e249ab17ecf9f4ac3fd, type: 2}
   - {fileID: 11400000, guid: 2fedff22692463148aee237ca0139869, type: 2}
@@ -7764,6 +7771,7 @@ MonoBehaviour:
   PlayButton: {fileID: 1955313755}
   gameObject1: {fileID: 0}
   gameObject2: {fileID: 0}
+  Shop: 1
 --- !u!114 &1641076663
 MonoBehaviour:
   m_ObjectHideFlags: 0

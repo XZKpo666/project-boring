@@ -16,7 +16,7 @@ public class GachaManager : MonoBehaviour
     {
         if(GameManagerDate.All_Currency3 <500)
         {
-            targetScript1.enabled = false;
+            //targetScript1.enabled = false;
             //targetScript2.enabled = false;            
         }
 
@@ -38,6 +38,11 @@ public class GachaManager : MonoBehaviour
             _prize._name.text = drawnCard._name;
             RemoveCardFromPool(randomIndex);
         }
+        else
+        {
+            targetScript1.enabled = false;
+        }
+
     }
 
     private void RemoveCardFromPool(int index)
