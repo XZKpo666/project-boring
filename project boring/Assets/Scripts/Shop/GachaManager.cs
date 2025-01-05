@@ -6,37 +6,33 @@ using UnityEngine.UI;
 public class GachaManager : MonoBehaviour
 {
     public Prize _prize;
+    public GameObject gameObject1;
     public MonoBehaviour targetScript1;
     public MonoBehaviour targetScript2;
+    private bool isRuning = false;
     [SerializeField] private PrizeInfo[] _prizePool;
     [SerializeField] private Image _prizeImage;
     [SerializeField] private Text _prizeName;
 
     public void Pull()
-    {
-        if(GameManagerDate.All_Currency3 <500)
-        {
-            //targetScript1.enabled = false;
-            //targetScript2.enabled = false;            
-        }
-
+    {        
         if(GameManagerDate.All_Currency3 >= 500)
         {
-            //targetScript1.enabled = true;
-            //targetScript2.enabled = true;
             if (_prizePool.Length == 0)
             {
                 _prize._name.text = "抽完了";
                 return;
             }
+            gameObject1.SetActive(!gameObject1.activeSelf);
             GameManagerDate.All_Currency3 -=500;
-
             int randomIndex = Random.Range(0, _prizePool.Length);
             PrizeInfo drawnCard = _prizePool[randomIndex];
 
             _prize._img.sprite = drawnCard._image;
             _prize._name.text = drawnCard._name;
             RemoveCardFromPool(randomIndex);
+
+            //gameObject1.SetActive(!gameObject1.activeSelf);
         }
         else
         {

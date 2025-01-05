@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+using Codice.Client.BaseCommands;
 using GifImporter;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,8 +14,7 @@ namespace GifImporter
         public Button PlayButton; // 連接你的按鈕
         public GameObject gameObject1;
         public GameObject gameObject2;
-        public int Shop = 1;
-
+        public GameObject gameObject3;
         private int   _index;
         private float _flip;
         private Gif   _setGif;
@@ -43,13 +45,10 @@ namespace GifImporter
                 // 停止播放
                 var frame = frames[0];
                 Apply(frame);
-                _isPlaying = false;
-                if(Shop == 1)
-                {
-                    gameObject1.SetActive(!gameObject1.activeSelf);
-                    gameObject2.SetActive(!gameObject2.activeSelf);
-                }                
-                
+                _isPlaying = false;            
+                gameObject1.SetActive(!gameObject1.activeSelf);
+                gameObject2.SetActive(!gameObject2.activeSelf);
+                gameObject3.SetActive(!gameObject3.activeSelf);                                
                 return;
             }
 
