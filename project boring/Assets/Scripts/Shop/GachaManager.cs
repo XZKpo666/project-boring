@@ -9,25 +9,30 @@ public class GachaManager : MonoBehaviour
     public int X;
     public GameObject gameObject1;
     public MonoBehaviour targetScript;
+    
+    //private PrizeInfo prizeInfo;
     [SerializeField] private PrizeInfo[] _prizePool;
     [SerializeField] private Image _prizeImage;
     [SerializeField] private Text _prizeName;
 
     public void Pull()
-    {        
+    {
+        //prizeInfo = FindAnyObjectByType<PrizeInfo>();        
         if(GameManagerDate.All_Currency3 >= 500)
         {
             if (_prizePool.Length == 0)
             {
+                targetScript.enabled = false;
                 _prize._name.text = "抽完了";
                 return;
             }
             gameObject1.SetActive(!gameObject1.activeSelf);
             GameManagerDate.All_Currency3 -=500;
             int randomIndex = Random.Range(0, _prizePool.Length);
-            X = randomIndex;
+            
             PrizeInfo drawnCard = _prizePool[randomIndex];
-
+            
+            X = drawnCard._num;
             _prize._img.sprite = drawnCard._image;
             _prize._name.text = drawnCard._name;
             RemoveCardFromPool(randomIndex);

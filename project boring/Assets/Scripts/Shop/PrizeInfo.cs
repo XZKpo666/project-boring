@@ -7,4 +7,5 @@ public class PrizeInfo : ScriptableObject
 {
     public Sprite _image;
     public string _name;
+    public int _num;
 }
