@@ -26,7 +26,7 @@ public class Animal_Postion : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void A()
     {
         if(GachaManager.X == 0)
         {

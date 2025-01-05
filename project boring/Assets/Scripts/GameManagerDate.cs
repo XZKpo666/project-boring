@@ -36,7 +36,7 @@ public static class GameManagerDate
 
     public static double All_Currency1 ;
     public static double All_Currency2 ;
-    public static int All_Currency3 = 1000;
+    public static int All_Currency3 = 10000;
 
     public static int Mission_1_money = 1000;    
 
